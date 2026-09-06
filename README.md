@@ -2,7 +2,7 @@
 
 A mood-adaptive smart room automation system - built for **3707ICT: Automation and IoT** (Griffith University, Group Project, 70%).
 
-Select an emotional state — **Calm**, **Energize**, **Cozy**, or **Focus** — from a cloud dashboard, and MoodSync automatically adjusts room lighting and heating/cooling to match. The system uses edge intelligence to override unsafe or wasteful choices (e.g. it won't turn on heating if the room is already hot), and automatically reverts to an energy-saving state when the room is empty.
+Select an emotional state - **Calm**, **Energize**, **Cozy**, or **Focus** - from a cloud dashboard, and MoodSync automatically adjusts room lighting and heating/cooling to match. The system uses edge intelligence to override unsafe or wasteful choices (e.g. it won't turn on heating if the room is already hot), and automatically reverts to an energy-saving state when the room is empty.
 
 ## Team
 
@@ -16,9 +16,9 @@ MoodSync implements the four-layer IoT reference model:
 | Layer | Components |
 |---|---|
 | **Perception** | DHT22 (temperature & humidity), PIR (motion) → RGB LED, relay, active buzzer |
-| **Processing** | ESP32 — local automation rules + edge override logic |
+| **Processing** | ESP32 - local automation rules + edge override logic |
 | **Network** | MQTT over Wi-Fi, star topology |
-| **Application** | Adafruit IO dashboard — emotion selector, live readings, historical charts |
+| **Application** | Adafruit IO dashboard - emotion selector, live readings, historical charts |
 
 ## Hardware
 
@@ -59,7 +59,7 @@ MQTT authentication is handled via Adafruit IO username/key (see `secrets_exampl
 
 ## Course
 
-3707ICT — Automation and IoT, Griffith University
+3707ICT - Automation and IoT, Griffith University
 Convenor: A/Prof Jun Jo · Tutor: Hung Vu
 
 ## Report & demo
