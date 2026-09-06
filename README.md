@@ -6,8 +6,8 @@ Select an emotional state — **Calm**, **Energize**, **Cozy**, or **Focus** —
 
 ## Team
 
-- **Jasmine [Surname]** - Perception & Processing layers (sensors, local automation rules, edge override logic)
-- **Youssef [Surname]** - Network & Application layers (Wi-Fi/MQTT setup, Adafruit IO dashboard)
+- **Jasmine Hamouda** - Perception & Processing layers (sensors, local automation rules, edge override logic)
+- **Youssef El-Samman** - Network & Application layers (Wi-Fi/MQTT setup, Adafruit IO dashboard)
 
 ## Architecture
 
