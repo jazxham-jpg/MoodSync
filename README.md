@@ -2,12 +2,12 @@
 
 A mood-adaptive smart room automation system, built for 3707ICT: Automation and IoT (Griffith University, Group Project, 70%).
 
-Select an emotional state — Calm, Energise, Cozy, or Focus — from a cloud dashboard, and MoodSync automatically adjusts room lighting and heating/cooling to match. The system uses edge intelligence to override unsafe or wasteful choices (it won't turn on heating if the room is already hot), and automatically reverts to an energy-saving state when the room is empty.
+Select an emotional state (Calm, Energise, Cozy, or Focus) from a cloud dashboard, and MoodSync automatically adjusts room lighting and heating/cooling to match. The system uses edge intelligence to override unsafe or wasteful choices (it won't turn on heating if the room is already hot), and automatically reverts to an energy-saving state when the room is empty.
 
 ## Team
 
-- **Jasmine Hamouda** — Perception & Processing layers (sensors, local automation rules, edge override logic)
-- **Youssef El-Samman** — Network & Application layers (Wi-Fi/MQTT setup, Adafruit IO dashboard)
+- **Jasmine Hamouda**: Perception & Processing layers (sensors, local automation rules, edge override logic)
+- **Youssef El-Samman**: Network & Application layers (Wi-Fi/MQTT setup, Adafruit IO dashboard)
 
 ## Architecture
 
@@ -15,10 +15,10 @@ MoodSync implements the four-layer IoT reference model:
 
 | Layer | Components |
 |---|---|
-| Perception | DHT22 (temperature & humidity), PIR (motion) → RGB LED, relay, active buzzer |
-| Processing | ESP32 — local automation rules + edge override logic |
+| Perception | DHT22 (temperature & humidity), PIR (motion), RGB LED, relay, active buzzer |
+| Processing | ESP32, running local automation rules and edge override logic |
 | Network | MQTT over Wi-Fi, star topology |
-| Application | Adafruit IO dashboard — emotion selector, live readings, historical charts |
+| Application | Adafruit IO dashboard, emotion selector, live readings, historical charts |
 
 ## Hardware
 
@@ -33,17 +33,17 @@ MoodSync implements the four-layer IoT reference model:
 
 Install these via the Arduino IDE Library Manager (or Wokwi's Library Manager if running in-browser):
 
-- **DHT sensor library** (Adafruit) — reads temperature and humidity from the DHT22
-- **Adafruit Unified Sensor** — dependency required by the DHT library
-- **Adafruit MQTT Library** — handles MQTT publish/subscribe to Adafruit IO
-- **WiFi.h** — built into the ESP32 board package, no separate install needed
+- **DHT sensor library** (Adafruit): reads temperature and humidity from the DHT22
+- **Adafruit Unified Sensor**: dependency required by the DHT library
+- **Adafruit MQTT Library**: handles MQTT publish/subscribe to Adafruit IO
+- **WiFi.h**: built into the ESP32 board package, no separate install needed
 
 ## Automation rules
 
-1. **Emotion selection** (dashboard → MQTT) → lighting/heating mapping
-2. **Environmental override** — blocks heating if the room is already hot, even if "Cozy" is selected
-3. **Occupancy auto-off** — PIR detects an empty room → reverts to an "Away" state, everything off
-4. **Ventilation override** — humidity above threshold triggers ventilation regardless of selected mood
+1. **Emotion selection** (dashboard to MQTT), maps to a lighting/heating preset
+2. **Environmental override**: blocks heating if the room is already hot, even if "Cozy" is selected
+3. **Occupancy auto-off**: PIR detects an empty room and reverts to an "Away" state, everything off
+4. **Ventilation override**: humidity above threshold triggers ventilation regardless of selected mood
 
 ## Repository contents
 
@@ -67,9 +67,15 @@ MQTT authentication is handled via Adafruit IO username/key (see `secrets_exampl
 
 ## Course
 
-3707ICT — Automation and IoT, Griffith University
-Convenor: A/Prof Jun Jo · Tutor: Hung Vu
+3707ICT: Automation and IoT, Griffith University
+Convenor: A/Prof Jun Jo. Tutor: Hung Vu
 
 ## Demo
 
 [moodsync_demo.mp4](./moodsync_demo.mp4)
+How is Claude doing this session?
+
+
+
+
+Claude is AI and can make mistakes.
