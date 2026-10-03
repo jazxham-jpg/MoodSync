@@ -73,8 +73,6 @@ Convenor: A/Prof Jun Jo. Tutor: Hung Vu
 ## Demo
 
 [moodsync_demo.mp4](./moodsync_demo.mp4)
-How is Claude doing this session?
-
 
 
 
