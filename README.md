@@ -73,7 +73,3 @@ Convenor: A/Prof Jun Jo. Tutor: Hung Vu
 ## Demo
 
 [moodsync_demo.mp4](./moodsync_demo.mp4)
-
-
-
-Claude is AI and can make mistakes.
